@@ -1,0 +1,2 @@
+module ViaturasHelper
+end

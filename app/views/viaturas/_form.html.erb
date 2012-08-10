@@ -1,0 +1,33 @@
+<%= form_for(@viatura) do |f| %>
+  <% if @viatura.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@viatura.errors.count, "error") %> prohibited this viatura from being saved:</h2>
+
+      <ul>
+      <% @viatura.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :placa %><br />
+    <%= f.text_field :placa %>
+  </div>
+  <div class="field">
+    <%= f.label :prefixo %><br />
+    <%= f.text_field :prefixo %>
+  </div>
+  <div class="field">
+    <%= f.label :ano %><br />
+    <%= f.number_field :ano %>
+  </div>
+  <div class="field">
+    <%= f.label :modelo %><br />
+    <%= f.text_field :modelo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

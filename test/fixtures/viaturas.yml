@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  placa: MyString
+  prefixo: MyString
+  ano: 1
+  modelo: MyString
+
+two:
+  placa: MyString
+  prefixo: MyString
+  ano: 1
+  modelo: MyString

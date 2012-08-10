@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Placa:</b>
+  <%= @viatura.placa %>
+</p>
+
+<p>
+  <b>Prefixo:</b>
+  <%= @viatura.prefixo %>
+</p>
+
+<p>
+  <b>Ano:</b>
+  <%= @viatura.ano %>
+</p>
+
+<p>
+  <b>Modelo:</b>
+  <%= @viatura.modelo %>
+</p>
+
+
+<%= link_to 'Edit', edit_viatura_path(@viatura) %> |
+<%= link_to 'Back', viaturas_path %>

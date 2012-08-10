@@ -1,0 +1,29 @@
+<h1>Listing viaturas</h1>
+
+<table>
+  <tr>
+    <th>Placa</th>
+    <th>Prefixo</th>
+    <th>Ano</th>
+    <th>Modelo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @viaturas.each do |viatura| %>
+  <tr>
+    <td><%= viatura.placa %></td>
+    <td><%= viatura.prefixo %></td>
+    <td><%= viatura.ano %></td>
+    <td><%= viatura.modelo %></td>
+    <td><%= link_to 'Show', viatura %></td>
+    <td><%= link_to 'Edit', edit_viatura_path(viatura) %></td>
+    <td><%= link_to 'Destroy', viatura, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Viatura', new_viatura_path %>
